@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import NavBar from './NavBar';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ArticlesListPage from './pages/ArticlesListPage';
@@ -10,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
     <div className="App">
-      <h1>My blog</h1>
+      <NavBar />
       <div id="page-body">
         <Routes>
           <Route path="/" element={<HomePage />} />
